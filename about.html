@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Інформація про проєкт довідника вудок Fisch, інструкція користування та часті запитання.">
+    <title>Про проєкт – Fisch: Енциклопедія Рибалки</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header id="site-header">
+        <p><strong>Fisch: Енциклопедія Рибалки</strong></p>
+        <p>Автор проєкту: Милка Данила, студент групи ІН-42/2</p>
+        <nav aria-label="Основна навігація">
+            <ul>
+                <li><a href="index.html">Каталог вудок</a></li>
+                <li><a href="details.html">Деталі вудки</a></li>
+                <li><a href="about.html" aria-current="page">Про проєкт</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Про проєкт «Fisch: Енциклопедія Рибалки»</h1>
+        <p>Навчальний вебпроєкт із каталогом вудок для гри Fisch у Roblox, створений у межах курсу «Клієнтські технології Web-програмування» для зручного перегляду вартості, категорії та характеристик інструментів.</p>
+        <section id="how-to-use">
+            <h2>Як користуватися каталогом</h2>
+            <ol>
+                <li>Відкрийте сторінку «Каталог вудок» через головне меню.</li>
+                <li>Оберіть потрібну категорію у формі фільтрації.</li>
+                <li>За потреби позначте чекбокс «Тільки ті, що є в інвентарі».</li>
+                <li>Натисніть на назву вудки, щоб відкрити сторінку деталей.</li>
+            </ol>
+        </section>
+        <section id="roadmap">
+            <h2>Майбутні можливості</h2>
+            <ul>
+                <li>Стилізація інтерфейсу та адаптивна сітка карток за допомогою CSS.</li>
+                <li>Жива фільтрація й пошук вудок через JavaScript.</li>
+                <li>Динамічне підставлення даних обраної вудки на сторінці деталей.</li>
+            </ul>
+        </section>
+        <section id="media-overview">
+            <h2>Аудіофрагмент до проєкту</h2>
+            <audio controls preload="metadata">
+                <source src="media/overview.ogg" type="audio/ogg">
+                <source src="media/overview.mp3" type="audio/mpeg">
+                <track kind="captions" src="media/overview.vtt" srclang="uk" label="Українська" default>
+                <p>Ваш браузер не підтримує відтворення аудіо. <a href="media/overview.mp3">Завантажте аудіофайл</a>.</p>
+            </audio>
+        </section>
+        <section id="faq">
+            <h2>Часті запитання</h2>
+            <details name="faq">
+                <summary>Звідки дані про вудки?</summary>
+                <p>Інформація про вартість, категорію та дати випуску взята з гри Fisch станом на 2026 рік.</p>
+            </details>
+            <details name="faq">
+                <summary>Чому немає стилів?</summary>
+                <p>У цій лабораторній роботі верстка виконується виключно засобами HTML5 без CSS.</p>
+            </details>
+            <details name="faq">
+                <summary>Чи працює фільтрація зараз?</summary>
+                <p>Поки що реалізовано лише HTML-форму; логіка фільтрації додаватиметься на етапі JavaScript.</p>
+            </details>
+        </section>
+
+        <section id="author-contact">
+            <h2>Контакти автора</h2>
+            <address>
+                Милка Данила, група ІН-42/2, СумДУ<br>
+                Email: <a href="mailto:danila.mylka@student.sumdu.edu.ua">danila.mylka@student.sumdu.edu.ua</a>
+            </address>
+        </section>
+    </main>
+    <aside>
+        <h2>Додаткова інформація</h2>
+        <p>Усі характеристики вудок відповідають офіційним даним гри Fisch станом на 2026 рік.</p>
+    </aside>
+    <footer>
+        <p>Розробив Милка Данила (ІН-42/2) &copy; 2026</p>
+    </footer>
+</body>
+</html>

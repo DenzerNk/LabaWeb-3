@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог вудок для гри Fisch: характеристики, вартість та наявність в інвентарі.">
+    <title>Каталог вудок – Fisch: Енциклопедія Рибалки</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header id="site-header">
+        <p><strong>Fisch: Енциклопедія Рибалки</strong></p>
+        <p>Автор проєкту: Милка Данила, студент групи ІН-42/2</p>
+        <nav aria-label="Основна навігація">
+            <ul>
+                <li><a href="index.html" aria-current="page">Каталог вудок</a></li>
+                <li><a href="details.html">Деталі вудки</a></li>
+                <li><a href="about.html">Про проєкт</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Fisch: Енциклопедія Рибалки — Каталог вудок</h1>
+
+        <section id="about">
+            <h2>Про автора та проєкт</h2>
+            <article>
+                <h3>Привіт, я Данила</h3>
+                <p>Я студент групи ІН-42/2. Мені подобається грати в ігри та дізнаватися, як їх створювати. Це мій персональний довідник інструментів для гри <strong>Fisch</strong>. Тут я збираю інформацію про вудки, щоб ефективніше ловити рідкісних риб.</p>
+                <img src="images/avatar.jpg" alt="Аватар студента Милки Данили" title="Моє фото" fetchpriority="high" decoding="async" width="150" height="150">
+            </article>
+        </section>
+
+        <section id="filters">
+            <h2>Фільтрація каталогу</h2>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Параметри пошуку</legend>
+                    <label for="category-filter">Категорія:</label>
+                    <select id="category-filter" name="category">
+                        <option value="all">Усі вудки</option>
+                        <option value="starter">Початкові</option>
+                        <option value="pro">Професійні</option>
+                        <option value="special">Спеціальні</option>
+                    </select>
+                    <label for="in-inventory">
+                        <input type="checkbox" id="in-inventory" name="inventory">
+                        Тільки ті, що є в інвентарі
+                    </label>
+                    <button type="submit">Застосувати</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="catalog-section">
+            <h2>Каталог вудок</h2>
+            <ul id="catalog">
+                <li>
+                    <article>
+                        <h3><a href="details.html">Flimsy Rod</a></h3>
+                        <picture>
+                            <source type="image/webp" srcset="images/Flimsy_Rod.webp 400w, images/Flimsy_Rod.webp 800w" sizes="(max-width: 600px) 400px, 800px">
+                            <img src="images/Flimsy_Rod.webp" alt="Дерев'яна вудка Flimsy Rod" title="Flimsy Rod" loading="lazy" decoding="async" width="200" height="200">
+                        </picture>
+                        <ul>
+                            <li><strong>Категорія:</strong> Початкові</li>
+                            <li><strong>Вартість:</strong> <data value="0">0 C$</data></li>
+                            <li><strong>Дата випуску:</strong> <time datetime="2024-01-01">01 січня 2024</time></li>
+                            <li><strong>В інвентарі:</strong> Так</li>
+                        </ul>
+                        <p>Базова вудка, яку видають на початку гри. Має дуже слабкі характеристики, але ідеальна для перших кроків.</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3><a href="details.html">Carbon Rod</a></h3>
+                        <picture>
+                            <source type="image/webp" srcset="images/Carbon_Rod.webp 400w, images/Carbon_Rod.webp 800w" sizes="(max-width: 600px) 400px, 800px">
+                            <img src="images/Carbon_Rod.webp" alt="Вуглецева вудка Carbon Rod" title="Carbon Rod" loading="lazy" decoding="async" width="200" height="200">
+                        </picture>
+                        <ul>
+                            <li><strong>Категорія:</strong> Професійні</li>
+                            <li><strong>Вартість:</strong> <data value="2000">2 000 C$</data></li>
+                            <li><strong>Дата випуску:</strong> <time datetime="2024-02-15">15 лютого 2024</time></li>
+                            <li><strong>В інвентарі:</strong> Так</li>
+                        </ul>
+                        <p>Надійна вуглецева вудка з гарним балансом швидкості та міцності волосіні.</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3><a href="details.html">Fast Rod</a></h3>
+                        <picture>
+                            <source type="image/webp" srcset="images/Fast_Rod.webp 400w, images/Fast_Rod.webp 800w" sizes="(max-width: 600px) 400px, 800px">
+                            <img src="images/Fast_Rod.webp" alt="Швидкісна вудка Fast Rod" title="Fast Rod" loading="lazy" decoding="async" width="200" height="200">
+                        </picture>
+                        <ul>
+                            <li><strong>Категорія:</strong> Спеціальні</li>
+                            <li><strong>Вартість:</strong> <data value="4500">4 500 C$</data></li>
+                            <li><strong>Дата випуску:</strong> <time datetime="2024-03-10">10 березня 2024</time></li>
+                            <li><strong>В інвентарі:</strong> Ні</li>
+                        </ul>
+                        <p>Дозволяє витягувати рибу набагато швидше, але потребує гарної реакції гравця.</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3><a href="details.html">Long Rod</a></h3>
+                        <picture>
+                            <source type="image/webp" srcset="images/Long_Rod.webp 400w, images/Long_Rod.webp 800w" sizes="(max-width: 600px) 400px, 800px">
+                            <img src="images/Long_Rod.webp" alt="Далекобійна вудка Long Rod" title="Long Rod" loading="lazy" decoding="async" width="200" height="200">
+                        </picture>
+                        <ul>
+                            <li><strong>Категорія:</strong> Професійні</li>
+                            <li><strong>Вартість:</strong> <data value="4500">4 500 C$</data></li>
+                            <li><strong>Дата випуску:</strong> <time datetime="2024-03-15">15 березня 2024</time></li>
+                            <li><strong>В інвентарі:</strong> Ні</li>
+                        </ul>
+                        <p>Закидає наживку набагато далі за інші вудки, що дозволяє ловити глибоководну рибу з берега.</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3><a href="details.html">Magnet Rod</a></h3>
+                        <picture>
+                            <source type="image/webp" srcset="images/Magnet_Rod.webp 400w, images/Magnet_Rod.webp 800w" sizes="(max-width: 600px) 400px, 800px">
+                            <img src="images/Magnet_Rod.webp" alt="Магнітна вудка Magnet Rod" title="Magnet Rod" loading="lazy" decoding="async" width="200" height="200">
+                        </picture>
+                        <ul>
+                            <li><strong>Категорія:</strong> Спеціальні</li>
+                            <li><strong>Вартість:</strong> <data value="15000">15 000 C$</data></li>
+                            <li><strong>Дата випуску:</strong> <time datetime="2024-05-20">20 травня 2024</time></li>
+                            <li><strong>В інвентарі:</strong> Ні</li>
+                        </ul>
+                        <p>Унікальна вудка, яка значно підвищує шанс виловити ящики, ключі та інший лут замість риби.</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3><a href="details.html">Destiny Rod</a></h3>
+                        <picture>
+                            <source type="image/webp" srcset="images/Destiny_Rod.webp 400w, images/Destiny_Rod.webp 800w" sizes="(max-width: 600px) 400px, 800px">
+                            <img src="images/Destiny_Rod.jpg" alt="Легендарна вудка Destiny Rod" title="Destiny Rod" loading="lazy" decoding="async" width="200" height="200">
+                        </picture>
+                        <ul>
+                            <li><strong>Категорія:</strong> Спеціальні</li>
+                            <li><strong>Вартість:</strong> <data value="190000">190 000 C$</data></li>
+                            <li><strong>Дата випуску:</strong> <time datetime="2024-08-01">01 серпня 2024</time></li>
+                            <li><strong>В інвентарі:</strong> Ні</li>
+                        </ul>
+                        <p>Одна з найдорожчих вудок у грі. Має величезний показник удачі (Luck), що дозволяє ловити міфічних риб.</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Додаткова інформація</h2>
+        <p>Усі характеристики вудок відповідають офіційним даним гри Fisch станом на 2026 рік.</p>
+    </aside>
+
+    <footer>
+        <p>Розробив Милка Данила (ІН-42/2) &copy; 2026</p>
+    </footer>
+</body>
+</html>
